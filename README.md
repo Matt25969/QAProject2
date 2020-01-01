@@ -1,3 +1,3 @@
 # QAProject2
 
-Tarot Readins with the help of crystals!
+Tarot Readings with the help of crystals!

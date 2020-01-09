@@ -1,0 +1,50 @@
+version: '3.6.9'
+services:
+    nginx:
+      image: nginx:latest
+      ports:
+        - target: 80
+          published: 80
+          protocol: tcp
+      volumes:
+        - type: bind
+          source: ./nginx/nginx.conf
+          target: /etc/nginx/nginx.conf
+      depends_on:
+        - Service1
+        - crystals
+        - cards
+        - readings
+    Service1:
+       image: service1
+       build: 
+         context: ./service1
+         dockerfile: Dockerfile
+       ports:
+        - target: 5000
+          published: 5000
+    crystals:
+       image: crystals
+       build: 
+         context: ./crystials
+         dockerfile: Dockerfile
+         #ports:
+         #- target: 5001
+         # published: 5001
+    cards:
+       image: cards
+       build: 
+         context: ./cards
+         dockerfile: Dockerfile
+         #ports:
+         #- target: 5002
+         # published: 5002
+    readings:
+       image: readings
+       build: 
+         context: ./readings
+         dockerfile: Dockerfile
+         #ports:
+         #- target: 5003
+         # published: 5003
+

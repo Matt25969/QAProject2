@@ -11,7 +11,6 @@ Jinja2==2.10.3
 keyring==10.6.0
 keyrings.alt==3.0
 MarkupSafe==1.1.1
-pycrypto==2.6.1
 pyxdg==0.25
 SecretStorage==2.3.1
 six==1.11.0

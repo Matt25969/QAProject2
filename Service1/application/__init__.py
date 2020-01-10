@@ -12,7 +12,7 @@ db = os.getenv('MY_SQL_DATABASE')
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://{0}:{1}@{2}/{3}'.format(user, password, url, db)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
-app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
+app.config['SECRET_KEY'] = 'SECRET_KEY'
 
 db=SQLAlchemy(app)
 

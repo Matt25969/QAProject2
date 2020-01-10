@@ -1,19 +1,19 @@
 <html>
 	<body bgcolor="#E6E6FA">
 	<center>
-	<head>
+
 		<title>Tarot Readings with the help of crystals</title>
 		<h1> Get your free online Tarot Reading TODAY! <h1>
-
-		<div class= "form">
-		<from method "POST" action= "">
-			<div class= "form-group">
-				{{ form.submit }}
-				
-				<p> {{ effects }} </p>
-		</div>
+		
+		<br>
+		<form method="POST" action="{{  url_for('home')  }}">
+			<button>Shuffle!</button>
 		</form>
-	</head>
+
+		<div>
+			{{  readings  }}
+		</div>
+	
 	</center>
 	</body>
 </html>

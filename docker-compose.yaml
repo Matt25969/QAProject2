@@ -12,38 +12,27 @@ services:
           source: ./nginx/nginx.conf
           target: /etc/nginx/nginx.conf
       depends_on:
-        - app
-    app:
-      image: flask:latest
-      build:
-        context: ./readings
-      ports:
-        - target: 5000
-          published: 5000
-          protocol: tcp
-       enviroment:
-        - MY_SQL_DB = ${MY_SQL_DB}
-        - SECRET_KEY = ${MY_SQL_DB_TEST}
-
+        - Service1
+        - crystals
+        - cards
+        - readings
     Service1:
        image: service1
-       build: 
-         context: ./Service1
-         dockerfile: ../Dockerfile
-   
+       build:
+         context: ./Service1 
     crystals:
        image: crystals
        build: 
          context: ./crystals
-         dockerfile: ../Dockerfile
+         # dockerfile: ../Dockerfile
     cards:
        image: cards
        build: 
          context: ./cards
-         dockerfile: ../Dockerfile
+         # dockerfile: ../Dockerfile
     readings:
        image: readings
        build: 
          context: ./readings
-         dockerfile: ../Dockerfile
+         #dockerfile: ../Dockerfile
 

@@ -1,3 +1,4 @@
+'''
 from application import db
 
 #reading table
@@ -11,3 +12,5 @@ class readings(db.Model):
            'Crystal:' , self.crystal , '\r\n',
            'Card:' , self.card,
         ])
+'''
+

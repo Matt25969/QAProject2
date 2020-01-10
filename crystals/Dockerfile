@@ -2,7 +2,7 @@
 FROM python:3.6.9
 
 
-WORKDIR /opt/QAProject2
+WORKDIR /opt/app
 
 COPY requirements.txt .
 

@@ -1,11 +1,8 @@
 from flask_wtf import FlaskForm
 from wtforms import SubmitField
 
-#button to select a crystal
-class CrystalGenerator(FlaskForm):
-    submit = SubmitField("Find your crystal")
+#button to get reading
+class ReadingGenerator(FlaskForm):
+    submit = SubmitField("Shuffle!")
 
-#button to select a card
-class CardGenerator(FlaskForm):
-    submit=SubmitField("Shuffle deck")
 

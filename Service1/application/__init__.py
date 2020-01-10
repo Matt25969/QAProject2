@@ -1,4 +1,5 @@
-import os, pymysql
+import os 
+import pymysql
 from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 

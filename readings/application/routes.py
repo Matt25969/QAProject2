@@ -4,9 +4,11 @@ import requests
 
 @app.route("/", methods= ["GET", "POST"])
 def reading():
-    crystal_service = requests.get("http://crystal:5001/").text
-    card_service=requests.get("http://card:5002/").text
-    if crystal_service == "Dolomite" or crystal_service =="Blue Opal" or crystal_service == "Astrophyllite" and  card_service == "The Fool":
+    crystal=requests.get("http://crystals:5001").text
+   # card=requests.get("http://cards:5002").text
+    
+    if crystal== "Dolomite" or crystal =="Blue Opal" or crystal == "Astrophyllite":
+        # and  card == "The Fool":
         reading = "this is your reading"
     else:
         reading = "this is your reverse  reading"

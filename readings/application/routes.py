@@ -9,7 +9,7 @@ def reading():
     
     if crystal== "Dolomite" or crystal =="Blue Opal" or crystal == "Astrophyllite":
         # and  card == "The Fool":
-        reading = "this is your reading!!!!!!!!!!"
+        reading = "this is your reading!"
     else:
         reading = "this is your reverse  reading!!!!!!!!!!!"
 

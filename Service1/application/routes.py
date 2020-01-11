@@ -11,7 +11,7 @@ import requests
 def home():
 
     response = requests.post("http://readings:5003").text
-    
+
     #text = response.text
 
     return response

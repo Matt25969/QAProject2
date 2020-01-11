@@ -12,14 +12,14 @@ services:
           source: ./nginx/nginx.conf
           target: /etc/nginx/nginx.conf
       depends_on:
-        - Service1
+        - service1
         - crystals
         - cards
         - readings
-    Service1:
-       image: spoject2jenkins:5000/Service1:build-${BUILD_NUMBER}
+    service1:
+       image: spoject2jenkins:5000/service1:build-${BUILD_NUMBER}
        build:
-         context: ./Service1
+         context: ./service1
        ports:
          - target: 5000
            published: 5000

@@ -13,7 +13,6 @@ def home():
     response = requests.post("http://readings:5003").text
 
     #text = response.text
-
-    return response
-#render_template( "home.html", title = "Tarot Reading with Crystals", readings=response)
+    
+    return render_template( "home.html", title = "Tarot Reading with Crystals", readings=response)
 

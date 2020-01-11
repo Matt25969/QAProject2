@@ -11,6 +11,6 @@ def reading():
         # and  card == "The Fool":
         reading = "this is your reading!"
     else:
-        reading = "this is your reverse  reading!!!!!!!!!!!"
+        reading = "this is your reverse  reading!"
 
     return reading

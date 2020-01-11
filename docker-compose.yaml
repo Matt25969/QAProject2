@@ -19,20 +19,25 @@ services:
     Service1:
        image: service1
        build:
-         context: ./Service1 
+         context: ./Service1
+       ports:
+         - target: 5000
+           published: 5000
+           protocol: tcp
+           
     crystals:
        image: crystals
        build: 
          context: ./crystals
-         # dockerfile: ../Dockerfile
+         dockerfile: Dockerfile
     cards:
        image: cards
        build: 
          context: ./cards
-         # dockerfile: ../Dockerfile
+         dockerfile: Dockerfile
     readings:
        image: readings
        build: 
          context: ./readings
-         #dockerfile: ../Dockerfile
+         dockerfile: Dockerfile
 

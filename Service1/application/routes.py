@@ -10,25 +10,10 @@ import requests
 
 def home():
 
-    #if request.method == "GET":
-    # reading = { "crystal" :"",
-     #               "card" : "",
-      #              "meaning" : "" }
+    response = requests.post("http://readings:5003").text
+    
+    #text = response.text
 
+    return response
+#render_template( "home.html", title = "Tarot Reading with Crystals", readings=response)
 
-    response = requests.get("http://readings:5003")
-    text = response.text
-
-    return render_template( "home.html", title = "Tarot Reading with Crystals", readings=text)
-
-'''
-
-def home():
-    form = ReadingGenerator()
-    if form.validate_on_submit():
-        response = requests.get("http://readings:5004")
-        reading = { "crystal" : "",
-                    "card" : "",
-                    "meaning" : "" }
-     return tender_template( "home.html", title = "Tarot Reading with Crystals")
-'''

@@ -1,15 +1,15 @@
 [jenkins]
-porject2jenkins
+poject2jenkins 
 
 [swarm-master]
 project
 
 [swarm-master:vars]
 ansible_user=evi_nikolaidou
-ansible_ssh_private_key_file=~/.ssh/google_compute_engine
+ansible_ssh_private_file=~/.ssh/id_rsa
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 
 [jenkins:vars]
-ansible_user=evi_nikolaidou
-ansible_ssh_private_key_file=~/.ssh/google_compute_engine
+ansible_user=jenkins
+ansible_ssh_private_key_file=~/.ssh/id_rsa
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'

@@ -4,12 +4,8 @@ pipeline{
         stages{
 		stage('--Build Docker--'){
 			steps{
-				sh '''. ~/.bashrc
-				      pwd
-				      ls
-				      docker-compose build
+				sh '''docker-compose build
 				      docker ps -a
-				      docker-compose push
 				      '''
 			}
 		}

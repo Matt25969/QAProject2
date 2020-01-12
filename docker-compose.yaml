@@ -17,7 +17,7 @@ services:
         - cards
         - readings
     service1:
-       image: poject2jenkins:5000/service1:build-${BUILD_NUMBER}
+       image: jenkins:5000/service1:build-${BUILD_NUMBER}
        build:
          context: ./service1
        ports:
@@ -26,7 +26,7 @@ services:
          protocol: tcp
            
     crystals:
-       image: poject2jenkins:5000/crystal:build-${BUILD_NUMBER}
+       image: jenkins:5000/crystal:build-${BUILD_NUMBER}
        build: 
          context: ./crystals
          dockerfile: Dockerfile
@@ -36,7 +36,7 @@ services:
          protocol: tcp
 
     cards:
-       image: poject2jenkins:5000/cards:build-${BUILD_NUMBER}
+       image: jenkins:5000/cards:build-${BUILD_NUMBER}
        build: 
          context: ./cards
          dockerfile: Dockerfile
@@ -46,7 +46,7 @@ services:
          protocol: tcp
 
     readings:
-       image: poject2jenkins:5000/readings:build-${BUILD_NUMBER}
+       image: jenkins:5000/readings:build-${BUILD_NUMBER}
        build: 
          context: ./readings
          dockerfile: Dockerfile

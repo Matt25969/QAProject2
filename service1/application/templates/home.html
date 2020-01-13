@@ -2,14 +2,17 @@
 	<body bgcolor="#E6E6FA">
 	<center>
 
-		<title>Tarot Readings with the help of crystals</title>
-		<h1> Get your free online Tarot Reading TODAY! <h1>
-		
+		<h1>Tarot Readings with the help of crystals</hi>
+		<h1><u> Get your free online Tarot Reading TODAY!</u><h1>
 		<br>
 		<form method="POST" action="{{  url_for('home')  }}">
-			<button>Shuffle!</button>
 			<div>
-		  	<p>{{  readings  }}</p>
+				<font color="purple"><h4>Your crystal is:</h4></font>
+				<p>{{  crystal  }}</p>
+				<font color="purple"><h4>Your card is: </h4></font>
+				<p>{{  card  }}</p>
+				<font color="purple"><h4>Your reading is: </h4></font>
+		  		<p>{{  readings  }}</p>
 		</div>
 		</form>
 

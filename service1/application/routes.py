@@ -11,8 +11,9 @@ import requests
 def home():
 
     response = requests.post("http://readings:5003").text
+    response2 = requests.post("http://crystals:5001").text
+    response3 = requests.post("http://cards:5002").text
 
-    #text = response.text
-    
-    return render_template( "home.html", title = "Tarot Reading with Crystals", readings=response)
+
+    return render_template( "home.html", title = "Tarot Reading with Crystals", crystal=response2, card=response3, readings=response)
 

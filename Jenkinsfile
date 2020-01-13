@@ -6,7 +6,6 @@ pipeline{
 			steps{
 				sh '''. ~/.bashrc
 				      docker-compose build
-				      docker-compose push
 				      '''
 			}
 		}

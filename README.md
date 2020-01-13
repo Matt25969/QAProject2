@@ -32,7 +32,7 @@ I created an app which randomly choose a crystal from a list and a randomly choo
 
 # Planing
 The planning of this project happent through Asana 
-import pic 
+![asana](Documentation/asana.png)
 
 # User Stories
 |No|User Story  |

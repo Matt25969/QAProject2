@@ -9,7 +9,7 @@ def reading():
     crystal=requests.get("http://crystals:5001").text
     card=requests.get("http://cards:5002").text
     reading= "Sorry about that...We are doing some updates.Just google it!"
-    return readings
+    return reading
 
 '''
 

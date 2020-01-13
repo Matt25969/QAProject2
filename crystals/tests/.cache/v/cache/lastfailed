@@ -1,0 +1,7 @@
+{
+  "test_crystals.py::TestApp": true, 
+  "test_crystals.py::TestApp::test_card_page": true, 
+  "test_crystals.py::TestApp::test_crystal_generator": true, 
+  "test_crystals.py::TestBase": true, 
+  "test_crystals.py::TestCase": true
+}

@@ -28,7 +28,7 @@ The requirements of the project are as follows:
 I created an app which randomly choose a crystal from a list and a randomly choose a card from the Tarrot Deck. Therefore, depenting on the crystal you get the the meaning of the card or the reverse meaning of the card.
 
 # Microservise Architecture
-import pic
+![microservice](Documentation/microservice.jpg)
 
 # Planing
 The planning of this project happent through Asana 

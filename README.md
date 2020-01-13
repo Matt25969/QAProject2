@@ -61,6 +61,14 @@ The planning of this project happent through Asana
 # Deployment
 ![diagram](Documentation/diagram.png)
 
+# Steps to use this app
+1)Create 3 vms (app,jenkins,ansible) 
+2)Clone this repository to one vm (app)
+3)Run the ansible files in one vm (anible) and ssh this vm to the other two (jenkins and app) 
+4)Create an sql database named "reading" and connected it to the vm that you clone the repository to (app)
+5)Start Jenkins
+
+
 # Future Updates
 
  - Add all 78 cards of the tarrot deck (currently only 22 cards)

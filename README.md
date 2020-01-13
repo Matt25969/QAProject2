@@ -7,7 +7,7 @@ Resources:
 - Asana: https://app.asana.com/0/1155050189853508/board
     
 - Website: 34.89.115.195
-- Jenkins: 35.242.191.186 
+- Jenkins: 35.242.191.186:8080 
 
 # The brief
 

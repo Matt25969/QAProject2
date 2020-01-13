@@ -5,7 +5,6 @@ pipeline{
 		stage('--Build Docker--'){
 			steps{
 				sh '''. ~/.bashrc
-				      sudo su jenkins
 				      docker-compose build
 				      docker-compose push
 				      '''

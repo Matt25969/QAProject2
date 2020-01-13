@@ -57,6 +57,19 @@ The planning of this project happent through Asana
 - Ansible
 
 # Risk Assesment
+|RISK|INPACT|LIKELIHOOD|Mitigation measure|
+|--|--|--|--|
+|Not meeting the deadline|High-not covering all aspects of project|Medium|Good time management and planning of the process. Asana will be used to avoid this issue|
+|Data Lost|Medium- losing python files could slow down the process of completing the project|Low|Pushing all needed files on Github as often as possible will prevent data lost|
+|GPC malfunctions|High-if a vm is malfunctioning, you will need to create a new one and re-install everything.This will be time-consuming|High|Creating an ansible playbook will not prevent this risk but it will be much easier and faster creating a new one|
+|issues with DevOps (Jenkins, Docker, Ansible)|High- one is depending on another, therefore high risk of not meeting the project's criteria|Medium|Understanding the material and doing all the exercises that are given to me
+|pytest issues|Low due to the app's structure not many tests can be run, with the knowledge we have so far|Low|Tests are relatively easy for this app so it should be easy to get fixed|
+
+
+
+
+
+
 
 # Deployment
 ![diagram](Documentation/diagram.png)

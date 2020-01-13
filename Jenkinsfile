@@ -11,7 +11,7 @@ pipeline{
 		}
                 stage('--Deploy Docker--'){
                         steps{
-				sh '''ssh project  << BOB
+				sh '''ssh project  << EOF
 				      export BUILD_NUMBER="${BUILD_NUMBER}"
                                       docker service update --replicas "3" --image jenkins:5000/service1:build-${BUILD_NUMBER} project_service1
 				      docker service update --replicas "3" --image jenkins:5000/cards:build-${BUILD_NUMBER} project_cards

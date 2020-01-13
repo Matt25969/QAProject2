@@ -43,7 +43,7 @@ import pic
 | 5| As a user i want to be able to know which card i have so i can understand the reading |
 
 # EDR
-
+![EDR](Documentation/EDR.jpg)
 
 # Risk Assesment
 

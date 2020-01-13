@@ -3,7 +3,6 @@ from application import app
 from application.models import readings
 import requests
 
-'''
 ########FOR DEMO ONLY#########
 @app.route("/", methods= ["GET", "POST"])
 def reading():
@@ -111,4 +110,4 @@ def reading():
         #in case i missed a card
         reading = "Sorry about that...Please refresh!"
     return reading
-   
+'''   

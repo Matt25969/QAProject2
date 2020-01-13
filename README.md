@@ -2,7 +2,7 @@
 
 Resources:
 
--  Presentation:
+-  Presentation:https://docs.google.com/presentation/d/1-A8vGamEZoOs1nNMGctTYBNGC4jAqh0AXrywU5aQFDI/edit?usp=sharing
     
 -  Asana: https://app.asana.com/0/1155050189853508/board
     

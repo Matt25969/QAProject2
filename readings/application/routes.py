@@ -2,7 +2,7 @@ from flask import render_template, redirect, url_for
 from application import app
 from application.models import readings
 import requests
-
+'''
 ########FOR DEMO ONLY#########
 @app.route("/", methods= ["GET", "POST"])
 def reading():
@@ -111,4 +111,3 @@ def reading():
         reading = "Sorry about that...Please refresh!"
     return reading
    
-'''

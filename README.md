@@ -1,13 +1,12 @@
 # QAProject2: Tarot Readings with the help of crystals!
-# Eurovision Favorites Platform
 
 Resources:
 
--   Presentation:  (https://drive.google.com/open?id=1wODXbcBgYIO8XAxUXzyF087J9vY42FRh)
+-  Presentation:
     
 -  Asana: https://app.asana.com/0/1155050189853508/board
     
--   Website:  34.89.115.195
+-  Website:  34.89.115.195
 
 # The brief
 

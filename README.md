@@ -59,6 +59,7 @@ The planning of this project happent through Asana
 # Risk Assesment
 
 # Deployment
+![diagram](Documentation/diagram.png)
 
 # Future Updates
 
